@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(125deg,rgba(96, 23, 179, 0.986),rgba(8, 21, 139, 0.945));
+}
+.container{
+    position: relative;
+    width: 80%;
+    margin: 5% auto;
+    border: 2px solid rgba(172, 164, 164, 0.384);
+    border-radius: 1em;
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+#newTask{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 3%;
+    border-radius: .5em;
+    
+}
+#searchBar{
+    position: relative;
+    font-family: sans-serif;
+    padding: 8px 5%;
+    width:85% ;
+    border: 1px solid rgba(0, 0, 0, 0.74);
+    border-radius: .5em;
+}
+#search{
+    cursor: pointer;
+    position: relative;
+    margin: 0px 0 0 4%;
+    padding: 7px;
+    background: rgba(37, 4, 100, 0.945);
+    font-weight: 800;
+    color:white;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 1px rgba(14, 13, 13, 0.74);
+    border-radius: .5em;
+}
+#search:active{
+    transform: translate(-1px,-2px);
+    color: rgb(167, 154, 154);
+}
+#menuTask{
+    margin-top: 5%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    padding: 5% 15px;
+    border-radius: .5em;
+    display: flex;
+    flex-direction: column;
+}
+ h1{
+    display: inline;
+    font-size: 1.3em;
+    color: grey;
+    margin: 10px auto 30px auto;
+    border-bottom: 2px solid grey;
+
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    margin: 3% 0px;
+}
+
+.taskName{
+     cursor: pointer;
+    position: relative;
+    max-width: 75%;
+    width: 75%;
+    border-bottom: 1px solid grey;
+    padding: 10px 20px;
+    margin-left:5% ;
+
+}
+button{
+    cursor: pointer;
+    position: relative;
+    margin: 0px 0 0 10%;
+    padding: 5px;
+    font-weight: 800;
+    background:rgb(255, 0, 0);
+    color: white;
+    border: 1px solid white;
+    box-shadow: 2px 2px 1px rgba(22, 22, 22, 0.74);
+    border-radius: .5em;
+}
+button:active{
+    transform: translate(-1px,-2px);
+    color: rgb(167, 154, 154);
+}
+.completed{
+    text-decoration: line-through;
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 90%;
+    }
+    #searchBar,#taskName{
+        width: 70%;
+    }
+    
+}
